@@ -16,4 +16,11 @@ function calcularPedido($nomeProduto, $precoUnitario, $quantidade, $percentualDe
     
     return $resultado;
 }
+
+function calcularFrete($valorTotal) {
+    $frete = $valorTotal * (10/100);
+    $totalcomfrete = $frete + $valorTotal;
+    return $totalcomfrete;
+
+}
 ?>
