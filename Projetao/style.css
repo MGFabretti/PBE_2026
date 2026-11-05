@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 15px;
+}
+
+.cabecalho h1 {
+    font-size: 1.8rem;
+    color: #1a202c;
+    margin-bottom: 5px;
+}
+
+.cabecalho p {
+    font-size: 0.95rem;
+    color: #718096;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+/* agrupa três elementos HTML diferentes */
+/* E type text Seleciona os textos com campos comuns */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #2d3748;
+    background-color: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* FOCUS faz navegar pelo site utilizando o teclado COMO: TAB */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+.opcoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal !important;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #3182ce;
+    width: 16px;
+    height: 16px;
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #3182ce;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: #2b6cb0;
+}
+
+.relatorio {
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.relatorio p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #4a5568;
+}
+
+.relatorio hr {
+    border: 0;
+    border-top: 1px solid #cbd5e0;
+    margin: 15px 0;
+}
+
+.relatorio h3 {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 12px;
+}
+
+.relatorio h2 {
+    font-size: 1.4rem;
+    color: #2b6cb0;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 2px dashed #cbd5e0;
+    padding-top: 12px;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #a0aec0;
+    margin-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+}
